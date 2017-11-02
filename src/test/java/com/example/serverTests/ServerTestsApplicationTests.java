@@ -12,7 +12,6 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.Form;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.Map;
@@ -67,11 +66,11 @@ public class ServerTestsApplicationTests {
 	@Test
 	public void testPost() {
 		log.info("Testing post request");
-		Form form = new Form();
-		String firstName = "Mayur";
-		String lastName = "Santani";
-		form.param("firstName", firstName);
-		form.param("lastName", lastName);
+//		Form form = new Form();
+//		String firstName = "Mayur";
+//		String lastName = "Santani";
+//		form.param("firstName", firstName);
+//		form.param("lastName", lastName);
 		String str = "{\"firstName\":\"Mayur\",\"lastName\":\"Santani\"}";
 		WebTarget webResource = client.target(REST_SERVICE_URL);
 		Response response = webResource.request(MediaType.APPLICATION_JSON)
