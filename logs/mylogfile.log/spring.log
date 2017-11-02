@@ -40,3 +40,45 @@ You may wish to exclude one of them to ensure predictable runtime behaviour
 2017-11-01 13:52:00.705  INFO 13540 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2017-11-01 13:52:00.989  INFO 13540 --- [Test worker] c.e.s.ServerTestsApplicationTests        : Started ServerTestsApplicationTests in 3.535 seconds (JVM running for 5.0)
 2017-11-01 13:52:01.100  INFO 13540 --- [Thread-5] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@37eea1b6: startup date [Wed Nov 01 13:51:57 EDT 2017]; root of context hierarchy
+2017-11-01 23:27:07.991  WARN 18040 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/xing.e.liu/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/xing.e.liu/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behaviour
+
+2017-11-01 23:27:08.019  INFO 18040 --- [Test worker] c.e.s.ServerTestsApplicationTests        : Starting ServerTestsApplicationTests on CPX-W9MLGFHHY4R with PID 18040 (started by xing.e.liu in C:\Users\xing.e.liu\Desktop\week2\serverTests)
+2017-11-01 23:27:08.019  INFO 18040 --- [Test worker] c.e.s.ServerTestsApplicationTests        : No active profile set, falling back to default profiles: default
+2017-11-01 23:27:08.071  INFO 18040 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1d5b7b03: startup date [Wed Nov 01 23:27:08 EDT 2017]; root of context hierarchy
+2017-11-01 23:27:09.550  INFO 18040 --- [Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-01 23:27:10.541  INFO 18040 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1d5b7b03: startup date [Wed Nov 01 23:27:08 EDT 2017]; root of context hierarchy
+2017-11-01 23:27:10.653  INFO 18040 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 23:27:10.655  INFO 18040 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 23:27:10.701  INFO 18040 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 23:27:10.702  INFO 18040 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 23:27:10.785  INFO 18040 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 23:27:11.005  INFO 18040 --- [Test worker] c.e.s.ServerTestsApplicationTests        : Started ServerTestsApplicationTests in 3.342 seconds (JVM running for 5.17)
+2017-11-01 23:27:11.093  INFO 18040 --- [Thread-5] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1d5b7b03: startup date [Wed Nov 01 23:27:08 EDT 2017]; root of context hierarchy
+2017-11-01 23:32:36.318  WARN 6804 --- [Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/xing.e.liu/.gradle/caches/modules-2/files-2.1/org.json/json/20160212/a742e3f85161835b95877478c5dd5b405cefaab9/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/xing.e.liu/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behaviour
+
+2017-11-01 23:32:36.342  INFO 6804 --- [Test worker] c.e.s.ServerTestsApplicationTests        : Starting ServerTestsApplicationTests on CPX-W9MLGFHHY4R with PID 6804 (started by xing.e.liu in C:\Users\xing.e.liu\Desktop\week2\serverTests)
+2017-11-01 23:32:36.346  INFO 6804 --- [Test worker] c.e.s.ServerTestsApplicationTests        : No active profile set, falling back to default profiles: default
+2017-11-01 23:32:36.398  INFO 6804 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1c090805: startup date [Wed Nov 01 23:32:36 EDT 2017]; root of context hierarchy
+2017-11-01 23:32:37.527  INFO 6804 --- [Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-01 23:32:38.451  INFO 6804 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1c090805: startup date [Wed Nov 01 23:32:36 EDT 2017]; root of context hierarchy
+2017-11-01 23:32:38.535  INFO 6804 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 23:32:38.539  INFO 6804 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 23:32:38.586  INFO 6804 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 23:32:38.587  INFO 6804 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 23:32:38.651  INFO 6804 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 23:32:38.891  INFO 6804 --- [Test worker] c.e.s.ServerTestsApplicationTests        : Started ServerTestsApplicationTests in 2.861 seconds (JVM running for 4.021)
+2017-11-01 23:32:38.951  INFO 6804 --- [Thread-5] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1c090805: startup date [Wed Nov 01 23:32:36 EDT 2017]; root of context hierarchy
