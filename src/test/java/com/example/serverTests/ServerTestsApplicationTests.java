@@ -31,23 +31,11 @@ public class ServerTestsApplicationTests {
 	@Before
 	public void setup(){
 		log.info("Initializing tester");
-		this.client = ClientBuilder.newClient();
 	}
-
-//	public static void main(String[] args){
-//		ServerTestsApplication tester = new ServerTestsApplication();
-//
-//		//initialize the tester
-//		tester.init();
-//		//test get all users Web Service Method
-//		log.info("Testing get request");
-//		tester.testGet();
-//		log.info("Testing post request");
-//		tester.testPost();
-//	}
 
 	@Test
 	public void testGet(){
+		this.client = ClientBuilder.newClient();
 		log.info("Testing get request");
 		Response response = this.client
 				.target(REST_SERVICE_URL+"xing/myhi")
@@ -61,10 +49,12 @@ public class ServerTestsApplicationTests {
 			assertEquals(jsonResponse.get("lastName"), "Liu");
 			log.info("testGet() passed");
 		}
+		client.close();
 	}
 
 	@Test
 	public void testPost() {
+		this.client = ClientBuilder.newClient();
 		log.info("Testing post request");
 //		Form form = new Form();
 //		String firstName = "Mayur";
@@ -83,6 +73,7 @@ public class ServerTestsApplicationTests {
 			assertEquals(jsonResponse.get("age"), 22.0);
 			log.info("testPost() passed");
 		}
+		client.close();
 	}
 
 }
